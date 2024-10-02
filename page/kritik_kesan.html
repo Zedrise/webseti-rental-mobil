@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kritik Saran</title>
+    <link rel="stylesheet" href="../styling.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="" class="logo"></a>
+            <ul class="menu">
+                <li><a href="../uuk.html">Home</a></li>
+                <li><a href="../uuk.html#tentang">Tentang</a></li>
+                <li><a href="../uuk.html#produk">Produk</a></li>
+                <!-- <li><a href="formulir.html">Formulir</a></li> -->
+                <!-- <li><a href="page/kontak_kami.html">Kontak Kami</a></li> -->
+            </ul>
+            <div class="tombol">&#9776;</div>
+        </div>
+        </nav>
+      <section class="contact-section" id="contact">
+        <form action="" method="GET" class="contact-form">
+            <h2 style="color: #212121;">kritik Saran Anda</h2>
+            <div class="form-group">
+                <label for="name">Nama :</label>
+                <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group"> 
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+                <label for="massage">Kritik & Saran :</label>
+                <textarea id="massage" name="massage" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Kirim Pesan</button><br>
+            <br>
+            
+            <a href="../uuk.html" class="btn-primary-home">Home</a>
+        </form>
+      </section>
+      <script type="text/javascript">
+        const tombol = document.querySelector(".tombol");
+        const menu = document.querySelector(".menu");
+    
+        tombol.addEventListener("click", () => {
+            menu.classList.toggle("aktif");
+        });
+      </script> 
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Website Rental Mobil</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="" class="logo"></a>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#produk">Produk</a></li>
+                <!-- <li><a href="page/formulir.html">Formulir Peminjaman</a></li> -->
+                <!-- <li><a href="page/kontak_kami.html">Kontak Kami</a></li> -->
+            </ul>
+            <div class="tombol">&#9776;</div>
+        </div>
+        </nav>
+        <section class="welcome-section" id="welcome">
+            <div class="welcome-text">
+                <h1>Selamat Datang</h1>
+                <p style="margin-bottom: 40px;"><b>Josseee</b></p>
+                <a href="#tentang" class="btn-primary">Lihat Detail</a><br>
+
+            </div>
+        </section>
+        <section class="tentang-section" id="tentang">
+            <div class="image-container">
+                <img src="asset/ppmobil-removebg-preview.png" alt="Deskripsi Gambar">
+            </div>
+            <div class="text-container">
+                <h2>Cars Josseee</h2>
+                <p> website ini adalah platform Rental Mobil , Mobil Kami siap menemani perjalanan Anda dengan berbagai pilihan mobil berkualitas, harga terjangkau, dan layanan yang ramah. Baik untuk keperluan bisnis,  atau perjalanan pribadi, kami menyediakan kendaraan yang nyaman,seruu dan aman. 
+                </p>
+            </div>
+        </section>
+        <section class="produk-section" id="produk">
+            <h2>Produk Kami</h2>
+            <div class="produk-container">
+                <div class="produk-card">
+                    <img src="asset/produk1ver1.png" alt="Produk 1">
+                    <h3>Bmw M4</h3>
+                    <p>Rp.20.000.000/24 jam </p><br>
+                    <a href="page/formulir.html" class="btn-primary">Sewa</a>
+                </div>
+                <div class="produk-card">
+                    <img src="asset/produk2.png" alt="Produk 2">
+                    <h3>Audi R8</h3>
+                    <p>Rp.15.000.000/24 jam</p><br>
+                    <a href="page/formulir.html" class="btn-primary">Sewa</a>
+                </div>
+                <div class="produk-card">
+                    <img src="asset/produk3.png" alt="Produk 3">
+                    <h3>Porsche 991 GT3</h3>
+                    <p>Rp.25.600.000/24 jam</p><br>
+                    <a href="page/formulir.html" class="btn-primary">Sewa</a>
+                </div>
+                <div class="produk-card">
+                    <img src="asset/produk4.png" alt="Produk 4">
+                    <h3>Nissan GT-R</h3>
+                    <p>Rp.22.000.000/24 jam</p><br>
+                    <a href="page/formulir.html" class="btn-primary">Sewa</a>
+                </div>
+                <div class="produk-card">
+                    <img src="asset/produk5.png" alt="Produk 5">
+                    <h3>mercendes amg gt 4</h3>
+                    <p>Rp.30.200.000/24 jam</p><br>
+                    <a href="page/formulir.html" class="btn-primary">Sewa</a>
+                </div>
+                <div class="produk-card">
+                    <img src="asset/produk6.png" alt="Produk 6">
+                    <h3>lamborghini huracan sto</h3>
+                    <p>Rp.30.500.000/24 jam</p><br>
+                    <a href="page/formulir.html" class="btn-primary">Sewa</a>
+                </div>
+            </div>
+        </section>
+        <script type="text/javascript">
+            //deklarasi tombol dan menu
+            const tombol = document.querySelector(".tombol");
+            const menu = document.querySelector(".menu");
+            
+            //membuat event click
+            //pada saat tombol di click, tambahkan class aktif pada class menu
+            //saat di klil lagi, maka class aktif dihilangkan dari class menu (toggle)
+            tombol.addEventListener("click", () => {
+                menu.classList.toggle("aktif");
+            });
+        </script>
+        </body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Peminjaman </title>
+    <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body { 
+
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    background-image: url(../asset/backgroun.jpg);
+    }
+
+    .container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    }
+
+    h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: larger;
+    
+
+    }
+
+    form {
+    display: flex;
+    flex-direction: column;
+    }
+
+    label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="date"],
+    select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    }
+  
+    input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #1a54c0;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    }
+/* 
+    input[type="submit"]:hover {
+    background-color: #45a049;
+    } */
+    .btn-primary-peminjaman{
+        background:#1a54c0 ;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 10px;
+        box-shadow: none;
+        border: none;
+        text-decoration: none;
+        align-items: center;
+        font-weight: 200;
+        text-align: center;
+
+    }
+    .btn-primary-home{
+    background: #1a54c0;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: none;
+    border: none;
+    text-decoration: none;
+    align-items: center;
+    font-weight: 200;
+    text-align: center;
+
+}
+
+ </style>
+
+
+</head>
+<body >
+  
+
+    <div class="container">
+        <h2 >Formulir Peminjaman </h2>
+        
+        <form action="/submit" method="POST">
+            
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+
+      
+            <label for="nik">NIK:</label>
+            <input type="text" id="nik" name="nik" maxlength="16" placeholder="Masukkan NIK Anda" required>
+
+      
+            <label for="telp">Nomor Telepon:</label>
+            <input type="tel" id="telp" name="telp" placeholder="Masukkan nomor telepon" required>
+
+            <label for="tgl_pinjam">Tanggal Peminjaman:</label>
+            <input type="date" id="tgl_pinjam" name="tgl_pinjam" required>
+
+
+            <label for="tgl_kembali">Tanggal Pengembalian:</label>
+            <input type="date" id="tgl_kembali" name="tgl_kembali" required>
+
+            <label for="mobil">Pilih Mobil:</label>
+            <select id="mobil" name="mobil" required>
+                <option value="">-- Pilih Mobil --</option>
+                <option value="Bmw M4">Bmw M4</option>
+                <option value="AUDI R8">AUDI R8</option>
+                <option value="Porsche 991 GT3">Porsche 991 GT3</option>
+                <option value="Nissan GT-R">Nissan GT-R</option>
+                <option value="mercendes amg gt 4">mercendes amg gt 4</option>
+                <option value="lamborghini huracan sto">lamborghini huracan sto</option>
+               
+            </select>
+
+            <!-- <input type="submit" value="Ajukan Peminjaman"><a href="pembayaran.html"></a><br> -->
+            <a href="pembayaran.html" class="btn-primary-peminjaman">Ajukan Peminjaman</a><br>
+            <a href="..//uuk.html" class="btn-primary-home">Home</a>
+        </form>
+    </div>
+
+    <script type="text/javascript">
+        const tombol = document.querySelector(".tombol");
+        const menu = document.querySelector(".menu");
+    
+        tombol.addEventListener("click", () => {
+            menu.classList.toggle("aktif");
+        });
+    </script> 
+
+</body>
+</html>
